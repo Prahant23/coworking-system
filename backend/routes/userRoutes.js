@@ -1,4 +1,5 @@
 const router = require("express").Router();
+
 const {
   register,
   login,
@@ -7,7 +8,7 @@ const {
   getUser,
   updateUser,
   deleteUser
-} = require("../controllers/userController");
+} = require("../controllers/userController"); // ✅ FIXED
 
 router.post("/register", register);
 router.post("/login", login);
